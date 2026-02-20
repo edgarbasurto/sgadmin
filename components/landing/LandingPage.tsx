@@ -295,7 +295,7 @@ export function LandingPage() {
           <div className="testimonials-grid">
             {testimonials.map((item) => (
               <article key={item.author} className="card testimonial-card">
-                <p>"{item.quote}"</p>
+                <p>&ldquo;{item.quote}&rdquo;</p>
                 <strong>{item.author}</strong>
                 <span>{item.role}</span>
               </article>
