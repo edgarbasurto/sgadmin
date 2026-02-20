@@ -33,6 +33,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Set base path for GitHub Pages
+        run: |
+          REPO_NAME="${GITHUB_REPOSITORY#*/}"
+          OWNER_NAME="${GITHUB_REPOSITORY_OWNER}"
+
+          if [ -f CNAME ] || [ -f public/CNAME ] || [ "$REPO_NAME" = "${OWNER_NAME}.github.io" ]; then
+            BASE_PATH=""
+          else
+            BASE_PATH="/$REPO_NAME"
+          fi
+
+          echo "NEXT_PUBLIC_BASE_PATH=$BASE_PATH" >> "$GITHUB_ENV"
+          echo "Using NEXT_PUBLIC_BASE_PATH=${BASE_PATH:-<root>}"
+
       - name: Build static site
         run: npm run build
 
