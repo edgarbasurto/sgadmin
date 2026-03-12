@@ -1,0 +1,10 @@
+<svg width="1423" height="384" viewBox="0 0 1423 384" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(32 34) scale(1.21)">
+    <rect x="18" y="18" width="220" height="220" rx="54" stroke="#FFFFFF" stroke-width="16"/>
+    <path d="M176 80H108C89.22 80 74 95.22 74 114C74 132.78 89.22 148 108 148H148C166.78 148 182 163.22 182 182C182 200.78 166.78 216 148 216H80" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="188" cy="62" r="9" fill="#FFFFFF"/>
+  </g>
+
+  <text x="392" y="204" fill="#FFFFFF" font-size="128" font-weight="800" letter-spacing="1" font-family="Space Grotesk, Manrope, Segoe UI, Arial, sans-serif">SGAdmin</text>
+  <text x="398" y="264" fill="#FFFFFF" font-size="42" font-weight="600" letter-spacing="0.5" font-family="Manrope, Segoe UI, Arial, sans-serif">Sistema de Gestion Empresarial</text>
+</svg>

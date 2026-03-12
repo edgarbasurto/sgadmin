@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LeadForm } from "./LeadForm";
 
 const capabilities = [
@@ -134,8 +135,14 @@ export function LandingPage() {
         <div className="container header-shell">
           <nav className="top-nav">
             <div className="brand">
-              <span className="brand-dot" />
-              <span>SGAdmin</span>
+              <Image
+                src="/brand/logo-wordmark-darkbg.svg"
+                alt="SGAdmin"
+                width={194}
+                height={46}
+                priority
+                className="brand-logo"
+              />
             </div>
             <div className="nav-links">
               <a href="#funcionalidades">Funcionalidades</a>

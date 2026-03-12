@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "SGAdmin | ERP para facturación electrónica y control empresarial",
   description:
     "Gestiona ventas, facturación electrónica SRI, cartera, inventario y reportes desde una sola plataforma.",
+  icons: {
+    icon: "/brand/logo-mark-badge-64.png",
+    apple: "/brand/logo-mark-badge-192.png",
+  },
 };
 
 export default function RootLayout({
